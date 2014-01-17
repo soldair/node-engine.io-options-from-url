@@ -13,6 +13,6 @@ var stream = engine(fix('https://mywebsopckets.com/engine'));
 
 ```
 
-in this example engine.io will send your websocket to http://thedomainyouareon.comhttps//mywebsopckets.com/engine 
+in this example engine.io would have send the websocket to http://thedomainyouareon.comhttps//mywebsopckets.com/engine 
 
 w t f
