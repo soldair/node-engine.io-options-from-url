@@ -1,7 +1,7 @@
 {
   "name": "engine.io-options-from-url",
   "description": "engine.io-cleint's options / defaults are seriously broken for cross domain.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "url": "git://github.com/soldair/node-engine.io-options-from-url.git"
   },

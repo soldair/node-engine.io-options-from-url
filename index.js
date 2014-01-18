@@ -8,15 +8,15 @@ module.exports = function(serverUrlWithPath){
   // simple /engine.io
   if(!parsed.hostname) return serverUrlWithPath;
 
-  var secure = false; 
-  if(serverUrlWithPath.indexOf('https:') === 0){
-    secure = true;
+  var secure = true; 
+  if(serverUrlWithPath.indexOf('http:') === 0){
+    secure = false;
   }
 
   return {
     forceJSONP:loc.host != parsed.host, // silly to setup cors for this.
     hostname:parsed.hostname,
-    port:parsed.port||(secure?80:443),
+    port:parsed.port||(secure?443:80),
     path:parsed.path,
     secure:secure
   };
